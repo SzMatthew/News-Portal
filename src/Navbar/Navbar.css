@@ -1,0 +1,44 @@
+:root {
+    --dark_grey: #424650;
+    --middle_grey: #828591;
+    --light_blue: #CDD7E8;
+    --lightest_blue: #f5f9ff;
+    --salmon: #DBA38B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Noto Sans, sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    background-color: var(--dark_grey);
+    padding: 12px 0px;
+}
+
+.buttons {
+    margin: auto;
+}
+
+.buttons > button 
+{
+    margin: 0px 30px;
+    padding: px;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid var(--dark_grey);
+    background-color: inherit;
+    color: var(--light_blue);
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.buttons > button:hover {
+    color: var(--lightest_blue);
+}
+
+.active {
+    border-bottom: 3px solid var(--salmon) !important;
+}

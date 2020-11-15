@@ -1,0 +1,25 @@
+:root {
+    --dark_grey: #424650;
+    --middle_grey: #828591;
+    --light_grey: #aeb0b8;
+    --light_blue: #CDD7E8;
+    --lightest_blue: #f5f9ff;
+    --salmon: #DBA38B;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.news_panel {
+    background-color: var(--light_grey);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.flexbox-container {
+    display: flex;
+    flex-direction: row;
+}

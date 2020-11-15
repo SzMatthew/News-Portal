@@ -1,0 +1,39 @@
+:root {
+    --dark_grey: #424650;
+    --middle_grey: #828591;
+    --light_blue: #CDD7E8;
+    --lightest_blue: #f5f9ff;
+    --salmon: #DBA38B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidenav {
+    background-color: var(--middle_grey);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidenav > button {
+    outline: none;
+    background-color: inherit;
+    border: none;
+    color: var(--light_blue);
+    padding: 5px;
+    margin: 5px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.sidenav > button:hover {
+    color: var(--lightest_blue);
+}
+
+.categoryHeader {
+    color: var(--lightest_blue);
+    margin: 13px 0px;
+    font-size: 17px;
+}
