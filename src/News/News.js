@@ -1,22 +1,25 @@
 import React, {Component} from 'react';
 import Article from './Article/Article.js';
-import SideNav from './Sidenav/Sidenav.js'
+import SideNav from './Sidenav/Sidenav.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './News.css';
 
 class News extends Component
 {
+    
+
     constructor ()
     {
         super();
         this.state = {
             article_list: []
         }
-     }
+    }
+    
 
     componentDidMount()
     {
-        fetch("https://api.nytimes.com/svc/mostpopular/v2/viewed/1.json?api-key=b5JuZaAhcBuJcQ20bGG0K8uCiAGTJrcg")
+        fetch("https://api.nytimes.com/svc/mostpopular/v2/" + this.props.newsCategory + "/1.json?api-key=b5JuZaAhcBuJcQ20bGG0K8uCiAGTJrcg")
             .then(res => res.json())
             .then((result) =>
             { 
