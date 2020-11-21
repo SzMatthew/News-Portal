@@ -1,6 +1,7 @@
-export const changeNewsCategory = () =>
+export const changeNewsCategory = (category) =>
 {
     return {
-        type: 'CHANGE_CATEGORY'
+        type: 'CHANGE_CATEGORY',
+        payload: category
     }
 };
