@@ -1,6 +1,7 @@
 import Navbar from './Navbar/Navbar.js';
 import News from './News/News.js';
 import About from './About/About.js';
+import Login from './Login/Login.js';
 import {Switch, Route} from "react-router-dom"; 
 import {useSelector} from 'react-redux';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -14,7 +15,8 @@ function App ()
       <Navbar />
         <Switch>
         <Route exact path="/" render={(props) => (<News {...props} newsCategory={newsCategory}/>)}/>
-        <Route exact path="/About" component={About}/>
+        <Route exact path="/About" component={About} />
+        <Route exact path="/Login" component={Login} />
         </Switch>
     </div>
   );

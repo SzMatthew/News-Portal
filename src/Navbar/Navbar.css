@@ -22,10 +22,10 @@
     margin: auto;
 }
 
-.buttons > button 
+button 
 {
     margin: 0px 30px;
-    padding: px;
+    padding: 0px;
     outline: none;
     border: none;
     border-bottom: 3px solid var(--dark_grey);
@@ -35,8 +35,12 @@
     transition: 0.2s;
 }
 
-.buttons > button:hover {
+button:hover {
     color: var(--lightest_blue);
+}
+
+button:focus{
+    outline: none;
 }
 
 .active {

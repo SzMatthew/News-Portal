@@ -26,12 +26,22 @@ class Navbar extends Component
         this.props.history.push("/About");
     };
 
+    clickLogin = () =>
+    {
+        this.setState({activeTab: 'Login'});
+        this.props.history.push("/Login");
+
+     };
+
     render() {
         return (
             <div className="navbar">
                 <div className="buttons">
                     <button onClick={this.clickHome} className={ this.state.activeTab === 'Home' ? 'active' : '' }>Home</button>
-                    <button onClick={ this.clickAbout } className={ this.state.activeTab === 'About' ? 'active' : '' }>About</button>
+                    <button onClick={this.clickAbout} className={ this.state.activeTab === 'About' ? 'active' : '' }>About</button>
+                </div>
+                <div>
+                    <button onClick={this.clickLogin}className={ this.state.activeTab === 'Login' ? 'active' : '' }>Login</button>
                 </div>
             </div>
         )
